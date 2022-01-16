@@ -17,6 +17,8 @@ body {
 a {
   text-decoration: none;
 }
+.pri-title {
+}
 
 /*--------HEDER---------*/
 
@@ -25,6 +27,7 @@ a {
 }
 
 .logo {
+  font-family: Raleway;
   font-weight: bold;
   font-size: 26px;
   line-height: 1.19;
@@ -144,5 +147,87 @@ a {
 }
 /*-------------------footer-------------------------*/
 .footer {
-    background: #2F303A;
+  background: #2f303a;
+}
+
+.footer-info-adres {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  /* or 171% */
+
+  letter-spacing: 0.03em;
+
+  color: #ffffff;
+}
+.footer-info-adres:hover,
+.footer-info-adres:focus {
+  color: var(--selection-text-color);
+}
+
+.footer-info {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  /* or 171% */
+
+  letter-spacing: 0.03em;
+
+  color: rgba(255, 255, 255, 0.6);
+}
+.footer-info:hover,
+.footer-info:focus {
+  color: var(--selection-text-color);
+}
+
+/*--------------portfolio----------------*/
+
+.portfolio-button {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  /* identical to box height, or 162% */
+
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  color: var(--portfolio-btn-color);
+}
+
+.current {
+    background:#F5F4FA;
+}
+
+.current:hover,
+.current:focus {
+  background: var(--selection-text-color);
+}
+
+/*------------------PRODUCT-------------------------*/
+.product-title {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 2;
+  /* identical to box height, or 200% */
+
+  letter-spacing: 0.06em;
+
+  color: var(--header-text-color);
+}
+
+.product-link {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1.87;
+  /* identical to box height, or 187% */
+
+  letter-spacing: 0.03em;
+
+  color: var(--list-text-color);
 }
