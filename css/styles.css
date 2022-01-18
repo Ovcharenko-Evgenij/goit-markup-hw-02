@@ -3,11 +3,13 @@
   --list-text-color: #757575;
   --selection-text-color: #2196f3;
   --hero-btn-color: #ffffff;
-  --portfolio-btn-color: #212121;
+  --portfolio-btn-color: #f5f4fa;
 }
 
 body {
-  font-family: 'Raleway', 'Roboto';
+  font-family: "Roboto", sans-serif;
+  background-color: var(--hero-btn-color);
+  color: #757575;
 }
 
 .list {
@@ -28,15 +30,13 @@ a {
 
 .logo {
   font-family: Raleway;
-  font-weight: bold;
   font-size: 26px;
   line-height: 1.19;
-  /* identical to box height */
   letter-spacing: 0.03em;
   color: #2196f3;
 }
 .logo-studio {
-  color: #212121;
+  color: var(--header-text-color);
 }
 
 /*--------------header-list----------------*/
@@ -89,6 +89,7 @@ a {
 }
 .hero-button {
   font-family: inherit;
+  font-weight: 500;
   font-size: 16px;
   line-height: 1.87;
   /* identical to box height, or 187% */
@@ -98,13 +99,19 @@ a {
   text-align: center;
   letter-spacing: 0.06em;
 
-  color: #ffffff;
+  color: var(--hero-btn-color);
+  background-color: var(--selection-text-color);
+  cursor: pointer;
 }
-
+.hero-button-current:hover,
+.hero-button-current:focus {
+  background: var(--hero-btn-color);
+  color: var(--selection-text-color);
+}
 /*--------------about list-------------------*/
 
 .about-title {
-  font-weight: bold;
+  font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
@@ -114,19 +121,17 @@ a {
 }
 
 .about-after-title {
-  font-weight: normal;
+  font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
   /* or 171% */
 
   letter-spacing: 0.03em;
-
-  color: var(--list-text-color);
 }
 
 /*-------------------work------------------------*/
 .work-header {
-  font-weight: bold;
+  font-weight: 500;
   font-size: 36px;
   line-height: 1.16;
   text-align: center;
@@ -137,7 +142,7 @@ a {
 
 /*------------------team---------------------------*/
 .team-header {
-  font-weight: bold;
+  font-weight: 500;
   font-size: 36px;
   line-height: 1.16;
   text-align: center;
@@ -145,22 +150,38 @@ a {
 
   color: var(--header-text-color);
 }
-/*-------------------footer-------------------------*/
-.footer {
-  background: #2f303a;
-}
-
-.footer-info-adres {
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 1.71;
-  /* or 171% */
+.team-name {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
 
   letter-spacing: 0.03em;
 
-  color: #ffffff;
+  color: var(--header-text-color);
+}
+
+.team-position {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.19;
+
+  letter-spacing: 0.03em;
+}
+
+/*-------------------footer-------------------------*/
+.footer {
+  background: #2f303a;
+  }
+
+.addres {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+
+.footer-info-adres {
+    color: #ffffff;
 }
 .footer-info-adres:hover,
 .footer-info-adres:focus {
@@ -168,15 +189,6 @@ a {
 }
 
 .footer-info {
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 1.71;
-  /* or 171% */
-
-  letter-spacing: 0.03em;
-
   color: rgba(255, 255, 255, 0.6);
 }
 .footer-info:hover,
@@ -187,6 +199,7 @@ a {
 /*--------------portfolio----------------*/
 
 .portfolio-button {
+  font-family: inherit;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
@@ -195,21 +208,22 @@ a {
   text-align: center;
   letter-spacing: 0.03em;
 
-  color: var(--portfolio-btn-color);
+  color: var(--header-text-color);
+  cursor: pointer;
 }
 
 .current {
-    background:#F5F4FA;
+  background:var(--portfolio-btn-color);
 }
-
 .current:hover,
 .current:focus {
   background: var(--selection-text-color);
+  color: var(--hero-btn-color);
 }
 
 /*------------------PRODUCT-------------------------*/
 .product-title {
-  font-weight: bold;
+  font-weight: 500;
   font-size: 18px;
   line-height: 2;
   /* identical to box height, or 200% */
@@ -220,9 +234,7 @@ a {
 }
 
 .product-link {
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: normal;
+  font-weight: 400;
   font-size: 16px;
   line-height: 1.87;
   /* identical to box height, or 187% */
