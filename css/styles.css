@@ -19,8 +19,6 @@ body {
 a {
   text-decoration: none;
 }
-.pri-title {
-}
 
 /*--------HEDER---------*/
 
@@ -38,6 +36,9 @@ a {
 .logo-studio {
   color: var(--header-text-color);
 }
+.logo-studio-footer {
+  color: #ffffff;
+}
 
 /*--------------header-list----------------*/
 
@@ -49,6 +50,11 @@ a {
 
   color: var(--header-text-color);
 }
+
+.current-header {
+  color: var(--selection-text-color);
+}
+
 .header-link:hover,
 .header-link:focus {
   color: var(--selection-text-color);
@@ -106,7 +112,7 @@ a {
 .hero-button-current:hover,
 .hero-button-current:focus {
   background: var(--hero-btn-color);
-  color: var(--selection-text-color);
+  color: #188ce8;
 }
 /*--------------about list-------------------*/
 
@@ -131,7 +137,7 @@ a {
 
 /*-------------------work------------------------*/
 .work-header {
-  font-weight: 500;
+  font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
   text-align: center;
@@ -142,7 +148,7 @@ a {
 
 /*------------------team---------------------------*/
 .team-header {
-  font-weight: 500;
+  font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
   text-align: center;
@@ -171,9 +177,10 @@ a {
 /*-------------------footer-------------------------*/
 .footer {
   background: #2f303a;
-  }
+}
 
 .addres {
+  font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
@@ -181,7 +188,7 @@ a {
 }
 
 .footer-info-adres {
-    color: #ffffff;
+  color: #ffffff;
 }
 .footer-info-adres:hover,
 .footer-info-adres:focus {
@@ -212,9 +219,6 @@ a {
   cursor: pointer;
 }
 
-.current {
-  background:var(--portfolio-btn-color);
-}
 .current:hover,
 .current:focus {
   background: var(--selection-text-color);
@@ -223,7 +227,7 @@ a {
 
 /*------------------PRODUCT-------------------------*/
 .product-title {
-  font-weight: 500;
+  font-weight: 700;
   font-size: 18px;
   line-height: 2;
   /* identical to box height, or 200% */
